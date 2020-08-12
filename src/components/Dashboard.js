@@ -21,7 +21,7 @@ class Dashboard extends React.Component {
 
     componentDidMount() {
         this.setState({chartXAxisData:dataSeries.xAxisData,chartYAxisData:dataSeries.yAxisData})
-        this.intervalId = setInterval(this.setChartData.bind(this), 15000);
+        this.intervalId = setInterval(this.setChartData.bind(this), 5000);
     }
 
     componentWillUnmount() {
